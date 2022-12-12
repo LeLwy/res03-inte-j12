@@ -105,12 +105,203 @@
                 }
             }
             
+            &>footer{
+                
+                padding: 0 15vw;
+                
+                &>section{
+                    
+                    padding-top: 5vh;
+                    
+                    &>h2{
+                        
+                        display: none;
+                    }
+                }
+                
+                &>#instagram-caroussel{
+                    
+                    &>ul{
+                        
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        
+                        &>li{
+                            
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            height: 20vh;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            &#instagram-1{
+                                
+                                background-image: url('../../img/instagram/1.png');
+                            }
+                            
+                            &#instagram-2{
+                                
+                                background-image: url('../../img/instagram/2.png');
+                            }
+                            
+                            &#instagram-3{
+                                
+                                background-image: url('../../img/instagram/3.png');
+                            }
+                            
+                            &#instagram-4{
+                                
+                                background-image: url('../../img/instagram/4.png');
+                            }
+                            
+                            &#instagram-5{
+                                
+                                background-image: url('../../img/instagram/5.png');
+                            }
+                            
+                            a{
+                                
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                text-decoration: none;
+                                color: $white;
+                                font-size: 1.1rem;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                
+                &>#informations{
+                    
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-column-gap: 1.5vw;
+                    grid-row-gap: 2vh;
+                    
+                    &>section{
+                        
+                        &>h3{
+                                
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            margin-bottom: 3vh;
+                            
+                        }
+                        
+                        &>p{
+                            
+                            line-height: 1.5;
+                            font-size: 1.2rem;
+                            margin: 3vh 0;
+                        }
+                        
+                        &#about-us{
+                            
+                            grid-column: 1/2;
+                        }
+                        
+                        &#feature-posts{
+                            
+                            grid-column: 2/3;
+                            
+                            &>.featured-post{
+                            
+                            margin-bottom: 2vh;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            
+                                a{
+                                    
+                                    text-decoration: none;
+                                    color: $black;
+                                }
+                            
+                                &>header{
+                                    
+                                    &>figure{
+                                        
+                                        &>img{
+                                            
+                                        }
+                                        
+                                        &>figcaption{
+                                            
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            
+                                &>section{
+                                    
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding: 1vh 1.5vw;
+                                    
+                                    &>h4{
+                                        
+                                        font-weight: bold;
+                                        font-size: 1.1rem;
+                                        text-transform: capitalize;
+                                        margin-bottom: 1vh;
+                                    }
+                                    
+                                    &>ul{
+                                        
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        
+                                        &>li{
+                                            
+                                            margin-right: 1vw;
+                                            
+                                            &>span{
+                                                
+                                                color: $red;
+                                            }
+                                        }
+                                    }
+                                    
+                                    &>a{
+                                        
+                                        border-bottom: solid 3px $red;
+                                        text-transform: uppercase;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        &#tag-clouds{
+                            
+                            grid-column: 3/4;
+                        }
+                        
+                        &#follow-us{
+                            
+                            grid-column: 3/4;
+                        }
+                    }
+                }
+                
+                &>#copyright{
+                    
+                    text-align: center;
+                    padding: 2vh 0;
+                    border-top: solid 1px $lightGrey;
+                }
+            }
+            
             &#home{
                 
                 &>main{
                     
                     display: grid;
-                    gird-template-columns: 2fr 1fr;
+                    grid-template-columns: 2fr 1fr;
                     grid-column-gap: 3vw;
                     padding: 5vh 0;
                     width: 70vw;
@@ -137,12 +328,7 @@
                             
                             &>header{
                                 
-                                &>a{
-                                    
-                                    display: flex;
-                                    flex-direction: row;
-                                    
-                                    &>figure{
+                                &>figure{
                                             
                                             width: 100%;
                                         
@@ -160,6 +346,28 @@
                                         &>video{
                                             
                                             width: 100%;
+                                            border-radius: 5px;
+                                        }
+                                        
+                                        &>figcaption{
+                                            
+                                            display: none;
+                                        }
+                                }
+                                
+                                &>a{
+                                    
+                                    display: flex;
+                                    flex-direction: row;
+                                    
+                                    &>figure{
+                                            
+                                            width: 100%;
+                                        
+                                        &>img{
+                                            
+                                            width: 100%;
+                                            border-radius: 5px;
                                         }
                                         
                                         &>figcaption{
@@ -237,7 +445,14 @@
                         
                         grid-column: 2/3;
                         
+                        &>h2{
+                            
+                            display: none;
+                        }
+                        
                         &>#categories{
+                            
+                            margin-bottom: 3vh;
                             
                             &>h3{
                                 
@@ -286,11 +501,28 @@
                                             
                                         &>a{
                                             
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            text-decoration: none;
+                                            
+                                            &>h5{
+                                                
                                             font-weight: bold;
                                             text-transform: uppercase;
-                                            text-decoration: none;
                                             font-size: 1.1rem;
                                             color: $white;
+                                            }
+                                            
+                                            &>p{
+                                                
+                                                padding: 1vh 1vw;
+                                                background-color: $lightGrey;
+                                                font-weight: bold;
+                                                font-size: 1.1rem;
+                                                border-radius: 20px;
+                                            }
                                         }
                                     }
                                 }
@@ -299,6 +531,169 @@
                         
                         &>#trending-posts{
                             
+                            margin-bottom: 3vh;
+                            
+                            &>h3{
+                                
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                margin-bottom: 3vh;
+                            }
+                            
+                            &>.trending-post{
+                            
+                            margin-bottom: 3vh;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            
+                                a{
+                                    
+                                    text-decoration: none;
+                                    color: $black;
+                                }
+                            
+                                &>header{
+                                    
+                                    &>figure{
+                                        
+                                        &>img{
+                                            
+                                        }
+                                        
+                                        &>figcaption{
+                                            
+                                            display: none;
+                                        }
+                                    }
+                                    
+                                    &>h5{
+                                        
+                                        position: absolute;
+                                        padding: 1vh 1vw;
+                                        background-color: $black;
+                                        color: $white;
+                                        font-weight: bold;
+                                        font-size: .8rem;
+                                        border-radius: 20px;
+                                    }
+                                }
+                            
+                                &>section{
+                                    
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding: 1vh 1.5vw;
+    
+                                    &>h5{
+                                        
+                                        font-weight: bold;
+                                        font-size: .7rem;
+                                        text-transform: uppercase;
+                                        border-bottom: solid 6px $red;
+                                        margin-bottom: 1vh;
+                                        max-width: fit-content;
+                                    }
+                                    
+                                    &>h4{
+                                        
+                                        font-weight: bold;
+                                        font-size: 1.1rem;
+                                        text-transform: capitalize;
+                                        margin-bottom: 1vh;
+                                    }
+                                    
+                                    &>ul{
+                                        
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        
+                                        &>li{
+                                            
+                                            margin-right: 1vw;
+                                            
+                                            &>span{
+                                                
+                                                color: $red;
+                                            }
+                                        }
+                                    }
+                                    
+                                    &>a{
+                                        
+                                        border-bottom: solid 3px $red;
+                                        text-transform: uppercase;
+                                    }
+                                }
+                            }
+                            
+                        }
+                        
+                        &>#subscription{
+                            
+                            background-color: $lightGrey;
+                            border-radius: 5px;
+                            padding: 5vh 5vw;
+                            text-align: left;
+                            
+                            &>h3{
+                                
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                margin-bottom: 3vh;
+                            }
+                            
+                            &>p{
+                                    
+                                line-height: 1.5;
+                                font-size: 1.2rem;
+                                margin: 3vh 0;
+                            }
+                            
+                            &>form{
+                                
+                                &>fieldset{
+                                    
+                                    width: 100%;
+                                    
+                                    &>label{
+                                        
+                                        display: none;
+                                    }
+                                    
+                                    &>input{
+                                        
+                                        padding: 2vh 1vw;
+                                        border-radius: 3px;
+                                        margin-top: 2vh;
+                                        width: 100%;
+                                    }
+                                    
+                                        
+                                    &:first-of-type{
+                                        
+                                        &>input{
+                                            
+                                            border: solid 1px $lightGrey;
+                                            max-width: 100%;
+                                        }
+                                        
+                                    }
+                                    
+                                    &:last-of-type{
+                                        
+                                        &>input{
+                                            
+                                            border: none;
+                                            background-color: $red;
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }

@@ -45,7 +45,7 @@
         <section id="latest-posts">
             <h3>Les derniers articles</h3>
             <article class="latest-post">
-                <header class"article-header-illustration">
+                <header class="article-header-illustration">
                     <a href="#">
                         <figure>
                             <img src="assets/img/posts/1.png" alt="Image de plusieurs fichiers à l'intérieur d'un nuage encadré par une flèche montante et une descendante afin de représenter les échanges avec le cloud">
@@ -70,13 +70,11 @@
                 </section>
             </article>
             <article class="latest-post">
-                <header class"article-header-audio">
-                    <a href="#">
-                        <figure>
-                            <audio controls src="assets/audio/chopin-nocturne-op9-no2.mp3" alt"Une musique douce et lancinante, dont la mélancolie fascine et apaise"></audio>
-                            <figcaption>Musique</figcaption>
-                        </figure>
-                    </a>
+                <header class="article-header-audio">
+                    <figure>
+                        <audio controls src="assets/audio/chopin-nocturne-op9-no2.mp3"></audio>
+                        <figcaption>Musique</figcaption>
+                    </figure>
                     <h4>article 2</h4>
                 </header>
                 <section>
@@ -95,15 +93,13 @@
                 </section>
             </article>
             <article class="latest-post">
-                <header class"article-header-audio">
-                    <a href="#">
-                        <figure>
-                             <video controls>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/yFgY-RvJnao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </video>
-                            <figcaption>Vidéo</figcaption>
-                        </figure>
-                    </a>
+                <header class="article-header-audio">
+                    <figure>
+                         <video controls>
+                            <iframe src="https://www.youtube.com/embed/yFgY-RvJnao" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </video>
+                        <figcaption>Vidéo</figcaption>
+                    </figure>
                     <h4>article 3</h4>
                 </header>
                 <section>
@@ -122,7 +118,7 @@
                 </section>
             </article>
             <article class="latest-post">
-                <header class"article-header-illustration">
+                <header class="article-header-illustration">
                     <a href="#">
                         <figure>
                             <img src="assets/img/posts/15.png" alt="Un lion diplômé">
@@ -155,7 +151,7 @@
                 </section>
             </article>
             <article class="latest-post">
-                <header class"article-header-caroussel">
+                <header class="article-header-caroussel">
                     <a href="#">
                         <figure>
                             <img src="https://avitex.vn/theme/gute/assets/images/posts/hi-res-1.png" alt="Un caroussel d'image">
@@ -181,21 +177,22 @@
             </article>
         </section>
         <aside>
+            <h2>Catégories et Trending Posts</h2>
             <section id="categories">
             <h3>categories</h3>
             <nav id="cat-nav">
                 <h4>Liste des différentes catégories</h4>
                 <ul>
-                    <li id="design-category"><a href="#"><h5>design</h5></a></li>
-                    <li id="graphic-category"><a href="#"><h5>graphic</h5></a></li>
-                    <li id="illustrator-category"><a href="#"><h5>illustrator</h5></a></li>
-                    <li id="typography-category"><a href="#"><h5>typography</h5></a></li>
+                    <li id="design-category"><a href="#"><h5>design</h5><p>12</p></a></li>
+                    <li id="graphic-category"><a href="#"><h5>graphic</h5><p>6</p></a></li>
+                    <li id="illustrator-category"><a href="#"><h5>illustrator</h5><p>15</p></a></li>
+                    <li id="typography-category"><a href="#"><h5>typography</h5><p>8</p></a></li>
                 </ul>
             </nav>
             </section>
             <section id="trending-posts">
                 <h3>trending post</h3>
-                <article classe="trending-post">
+                <article class="trending-post">
                     <header>
                         <h5>1</h5>
                         <figure>
@@ -209,7 +206,7 @@
                         <p><span class="far fa-clock" role="presentation"></span>Seb 27, 2019</p>
                     </section>
                 </article>
-                <article classe="trending-post">
+                <article class="trending-post">
                     <header>
                         <h5>2</h5>
                         <figure>
@@ -223,7 +220,7 @@
                         <p><span class="far fa-clock" role="presentation"></span>Seb 27, 2019</p>
                     </section>
                 </article>
-                <article classe="trending-post">
+                <article class="trending-post">
                     <header>
                         <h5>3</h5>
                         <figure>
@@ -237,7 +234,7 @@
                         <p><span class="far fa-clock" role="presentation"></span>Seb 27, 2019</p>
                     </section>
                 </article>
-                <article classe="trending-post">
+                <article class="trending-post">
                     <header>
                         <h5>4</h5>
                         <figure>
@@ -251,7 +248,7 @@
                         <p><span class="far fa-clock" role="presentation"></span>Seb 27, 2019</p>
                     </section>
                 </article>
-                <article classe="trending-post">
+                <article class="trending-post">
                     <header>
                         <h5>5</h5>
                         <figure>
@@ -269,7 +266,7 @@
             <section id="subscription">
                 <h3>subscribe</h3>
                 <p>Lorem ipsum dolor amet, consectetur adipiscing elit, sed tempor.</p>
-                <form method="" action="">
+                <form method="post" action="">
                     <fieldset>
                         <label for="user-email">Entrez votre email</label>
                         <input type="email" name="email" id="user-email" placeholder="Your email"/>
@@ -284,10 +281,51 @@
     </main>
     <footer>
         <section id="instagram-caroussel">
-            
+            <h2>posts instagram</h2>
+            <ul>
+                <li id="instagram-1"><a href=""><span class="fab fa-instagram"></span><p>@ Gtute_News</p></a></li>
+                <li id="instagram-2"><a href=""><span class="fab fa-instagram"></span><p>@ Gtute_News</p></a></li>
+                <li id="instagram-3"><a href=""><span class="fab fa-instagram"></span><p>@ Gtute_News</p></a></li>
+                <li id="instagram-4"><a href=""><span class="fab fa-instagram"></span><p>@ Gtute_News</p></a></li>
+                <li id="instagram-5"><a href=""><span class="fab fa-instagram"></span><p>@ Gtute_News</p></a></li>
+            </ul>
         </section>
         <section id="informations">
-            
+            <h2>informations diverses</h2>
+            <section id="about-us">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida lacus vel facilisis.</p>
+                <ul>
+                    <li><span class="fas fa-map-marker-alt"></span>5 South Main Street Los Angeles, ZZ-96110 USA</li>
+                    <li><span class="far fa-mobile-android"></span>125-711-811 | 125-668-886v</li>
+                    <li><span class="fas fa-headphones-alt">Support.hosting@gmail.com</span></li>
+                </ul>
+            </section>
+            <section id="feature-posts">
+                <h3>feature posts</h3>
+                <article class="featured-post">
+                    <header>
+                        <figure>
+                            <img src="assets/img/posts/1.png.png" alt="">
+                            <figcaption>Image illustrant l'article</figcaption>
+                        </figure>
+                    </header>
+                    <section>
+                        <h4>Looking for some feedback for this rejected track</h4>
+                        <p><span class="far fa-clock" role="presentation"></span>Clock Wed 02, 2019</p>
+                    </section>
+                </article>
+            </section>
+            <section id="tag-clouds">
+                <h3>tag clouds</h3>
+            </section>
+            <section id="follow-us">
+                <h3>follow us</h3>
+            </section>
+        </section>
+        <section id="copyright">
+            <h2>copyright</h2>
+            <p>© 2019, GuteNews - News Magazine WordPress Theme. All rights reserved.</p>
         </section>
     </footer>
 </body>

@@ -111,9 +111,127 @@ table {
   html body > header > nav#header-search-rs-nav > ul > li {
     margin-left: 2vw;
   }
+  html body > footer {
+    padding: 0 15vw;
+  }
+  html body > footer > section {
+    padding-top: 5vh;
+  }
+  html body > footer > section > h2 {
+    display: none;
+  }
+  html body > footer > #instagram-caroussel > ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  html body > footer > #instagram-caroussel > ul > li {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  html body > footer > #instagram-caroussel > ul > li#instagram-1 {
+    background-image: url("../../img/instagram/1.png");
+  }
+  html body > footer > #instagram-caroussel > ul > li#instagram-2 {
+    background-image: url("../../img/instagram/2.png");
+  }
+  html body > footer > #instagram-caroussel > ul > li#instagram-3 {
+    background-image: url("../../img/instagram/3.png");
+  }
+  html body > footer > #instagram-caroussel > ul > li#instagram-4 {
+    background-image: url("../../img/instagram/4.png");
+  }
+  html body > footer > #instagram-caroussel > ul > li#instagram-5 {
+    background-image: url("../../img/instagram/5.png");
+  }
+  html body > footer > #instagram-caroussel > ul > li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  html body > footer > #informations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 2vh;
+  }
+  html body > footer > #informations > section > h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+  }
+  html body > footer > #informations > section > p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin: 3vh 0;
+  }
+  html body > footer > #informations > section#about-us {
+    grid-column: 1/2;
+  }
+  html body > footer > #informations > section#feature-posts {
+    grid-column: 2/3;
+  }
+  html body > footer > #informations > section#feature-posts > .featured-post {
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  html body > footer > #informations > section#feature-posts > .featured-post a {
+    text-decoration: none;
+    color: #000000;
+  }
+  html body > footer > #informations > section#feature-posts > .featured-post > header > figure > figcaption {
+    display: none;
+  }
+  html body > footer > #informations > section#feature-posts > .featured-post > section {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1.5vw;
+  }
+  html body > footer > #informations > section#feature-posts > .featured-post > section > h4 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin-bottom: 1vh;
+  }
+  html body > footer > #informations > section#feature-posts > .featured-post > section > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  html body > footer > #informations > section#feature-posts > .featured-post > section > ul > li {
+    margin-right: 1vw;
+  }
+  html body > footer > #informations > section#feature-posts > .featured-post > section > ul > li > span {
+    color: #ff4912;
+  }
+  html body > footer > #informations > section#feature-posts > .featured-post > section > a {
+    border-bottom: solid 3px #ff4912;
+    text-transform: uppercase;
+  }
+  html body > footer > #informations > section#tag-clouds {
+    grid-column: 3/4;
+  }
+  html body > footer > #informations > section#follow-us {
+    grid-column: 3/4;
+  }
+  html body > footer > #copyright {
+    text-align: center;
+    padding: 2vh 0;
+    border-top: solid 1px #e1e1e1;
+  }
   html body#home > main {
     display: grid;
-    gird-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-column-gap: 3vw;
     padding: 5vh 0;
     width: 70vw;
@@ -132,6 +250,23 @@ table {
     text-decoration: none;
     color: #000000;
   }
+  html body#home > main > #latest-posts > .latest-post > header > figure {
+    width: 100%;
+  }
+  html body#home > main > #latest-posts > .latest-post > header > figure > img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  html body#home > main > #latest-posts > .latest-post > header > figure > audio {
+    width: 100%;
+  }
+  html body#home > main > #latest-posts > .latest-post > header > figure > video {
+    width: 100%;
+    border-radius: 5px;
+  }
+  html body#home > main > #latest-posts > .latest-post > header > figure > figcaption {
+    display: none;
+  }
   html body#home > main > #latest-posts > .latest-post > header > a {
     display: flex;
     flex-direction: row;
@@ -142,12 +277,6 @@ table {
   html body#home > main > #latest-posts > .latest-post > header > a > figure > img {
     width: 100%;
     border-radius: 5px;
-  }
-  html body#home > main > #latest-posts > .latest-post > header > a > figure > audio {
-    width: 100%;
-  }
-  html body#home > main > #latest-posts > .latest-post > header > a > figure > video {
-    width: 100%;
   }
   html body#home > main > #latest-posts > .latest-post > header > a > figure > figcaption {
     display: none;
@@ -198,6 +327,12 @@ table {
   html body#home > main > aside {
     grid-column: 2/3;
   }
+  html body#home > main > aside > h2 {
+    display: none;
+  }
+  html body#home > main > aside > #categories {
+    margin-bottom: 3vh;
+  }
   html body#home > main > aside > #categories > h3 {
     font-size: 1.2rem;
     font-weight: bold;
@@ -227,10 +362,126 @@ table {
     background-image: url("../../img/backgrounds/category-4.png");
   }
   html body#home > main > aside > #categories > nav > ul > li > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+  html body#home > main > aside > #categories > nav > ul > li > a > h5 {
     font-weight: bold;
     text-transform: uppercase;
-    text-decoration: none;
     font-size: 1.1rem;
+    color: #ffffff;
+  }
+  html body#home > main > aside > #categories > nav > ul > li > a > p {
+    padding: 1vh 1vw;
+    background-color: #e1e1e1;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 20px;
+  }
+  html body#home > main > aside > #trending-posts {
+    margin-bottom: 3vh;
+  }
+  html body#home > main > aside > #trending-posts > h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+  }
+  html body#home > main > aside > #trending-posts > .trending-post {
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  html body#home > main > aside > #trending-posts > .trending-post a {
+    text-decoration: none;
+    color: #000000;
+  }
+  html body#home > main > aside > #trending-posts > .trending-post > header > figure > figcaption {
+    display: none;
+  }
+  html body#home > main > aside > #trending-posts > .trending-post > header > h5 {
+    position: absolute;
+    padding: 1vh 1vw;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 20px;
+  }
+  html body#home > main > aside > #trending-posts > .trending-post > section {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1.5vw;
+  }
+  html body#home > main > aside > #trending-posts > .trending-post > section > h5 {
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    border-bottom: solid 6px #ff4912;
+    margin-bottom: 1vh;
+    max-width: fit-content;
+  }
+  html body#home > main > aside > #trending-posts > .trending-post > section > h4 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin-bottom: 1vh;
+  }
+  html body#home > main > aside > #trending-posts > .trending-post > section > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  html body#home > main > aside > #trending-posts > .trending-post > section > ul > li {
+    margin-right: 1vw;
+  }
+  html body#home > main > aside > #trending-posts > .trending-post > section > ul > li > span {
+    color: #ff4912;
+  }
+  html body#home > main > aside > #trending-posts > .trending-post > section > a {
+    border-bottom: solid 3px #ff4912;
+    text-transform: uppercase;
+  }
+  html body#home > main > aside > #subscription {
+    background-color: #e1e1e1;
+    border-radius: 5px;
+    padding: 5vh 5vw;
+    text-align: left;
+  }
+  html body#home > main > aside > #subscription > h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+  }
+  html body#home > main > aside > #subscription > p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin: 3vh 0;
+  }
+  html body#home > main > aside > #subscription > form > fieldset {
+    width: 100%;
+  }
+  html body#home > main > aside > #subscription > form > fieldset > label {
+    display: none;
+  }
+  html body#home > main > aside > #subscription > form > fieldset > input {
+    padding: 2vh 1vw;
+    border-radius: 3px;
+    margin-top: 2vh;
+    width: 100%;
+  }
+  html body#home > main > aside > #subscription > form > fieldset:first-of-type > input {
+    border: solid 1px #e1e1e1;
+    max-width: 100%;
+  }
+  html body#home > main > aside > #subscription > form > fieldset:last-of-type > input {
+    border: none;
+    background-color: #ff4912;
     color: #ffffff;
   }
 }
