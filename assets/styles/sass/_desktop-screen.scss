@@ -1,0 +1,317 @@
+@media(min-width: 759px){
+    
+    html{
+        
+        font-size: 16px;
+        font-family: "DM Sans", sans-serif;
+        
+        body{
+            
+            &>header{
+                
+                padding: 3vh 15vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: 3px 3px 5px $lightGrey;
+                
+                &>figure{
+                    
+                    &>img{
+                        
+                        max-height: 2.5vh;
+                    }
+                    
+                    &>figcaption{
+                        
+                        display: none;
+                    }
+                }
+                
+                &>h1{
+                    
+                    display: none;
+                }
+                
+                &>nav{
+                    
+                    &>h2{
+                        
+                        display: none;
+                    }
+                    
+                    &>ul{
+                        
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        
+                        &>li{
+                            
+                            &>a{
+                                
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                font-size: 1.1rem;
+                                font-weight: bold;
+                                color: $black;
+                                
+                                &.active{
+                                    
+                                    border-bottom: solid 3px $red;
+                                }
+                            }
+                        }
+                    }
+                    
+                    &#header-nav{
+                        
+                        &>ul{
+                            
+                            &>li{
+                                
+                                margin-right: 4vw;
+                                
+                                &>a:hover{
+                                    
+                                    border-bottom: solid 3px $red;
+                                }
+                            }
+                        }
+                        
+                    }
+                    
+                    &#header-search-rs-nav{
+                        
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        
+                        &>ul{
+                            
+                            &:first-of-type{
+                                
+                                padding: 0 2vw;
+                                border-right: solid 1px $lightGrey;
+                            }
+                            
+                            &>li{
+                                
+                                margin-left: 2vw;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            &#home{
+                
+                &>main{
+                    
+                    display: grid;
+                    gird-template-columns: 2fr 1fr;
+                    grid-column-gap: 3vw;
+                    padding: 5vh 0;
+                    width: 70vw;
+                    margin: auto;
+                    
+                    &>#latest-posts{
+                        
+                        grid-column: 1/2;
+                        
+                        &>h3{
+                            
+                            display: none;
+                        }
+                        
+                        &>.latest-post{
+                            
+                            margin-bottom: 5vh;
+                            
+                            a{
+                                
+                                text-decoration: none;
+                                color: $black;
+                            }
+                            
+                            &>header{
+                                
+                                &>a{
+                                    
+                                    display: flex;
+                                    flex-direction: row;
+                                    
+                                    &>figure{
+                                            
+                                            width: 100%;
+                                        
+                                        &>img{
+                                            
+                                            width: 100%;
+                                            border-radius: 5px;
+                                        }
+                                        
+                                        &>audio{
+                                            
+                                            width: 100%;
+                                        }
+                                        
+                                        &>video{
+                                            
+                                            width: 100%;
+                                        }
+                                        
+                                        &>figcaption{
+                                            
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                
+                                &>h4{
+                                    
+                                    display: none;
+                                }
+                            }
+                            
+                            &>section{
+                                
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                padding: 1vh 1.5vw;
+
+                                &>h5{
+                                    
+                                    font-weight: bold;
+                                    font-size: .7rem;
+                                    text-transform: uppercase;
+                                    border-bottom: solid 6px $red;
+                                    margin-bottom: 3vh;
+                                }
+                                
+                                &>h4{
+                                    
+                                    font-weight: bold;
+                                    font-size: 1.9rem;
+                                    text-transform: capitalize;
+                                    margin-bottom: 3vh;
+                                }
+                                
+                                &>ul{
+                                    
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    
+                                    &>li{
+                                        
+                                        margin-right: 1vw;
+                                        
+                                        &>span{
+                                            
+                                            color: $red;
+                                        }
+                                    }
+                                }
+                                
+                                &>p{
+                                    
+                                    line-height: 1.5;
+                                    font-size: 1.2rem;
+                                    text-align: center;
+                                    margin: 3vh 0;
+                                }
+                                
+                                &>a{
+                                    
+                                    border-bottom: solid 3px $red;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                    }
+                    
+                    &>aside{
+                        
+                        grid-column: 2/3;
+                        
+                        &>#categories{
+                            
+                            &>h3{
+                                
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                margin-bottom: 3vh;
+                            }
+                            
+                            &>nav{
+                                
+                                &>h4{
+                                    
+                                    display: none;
+                                }
+                                
+                                &>ul{
+                                    
+                                    &>li{
+                                        
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        padding: 3vh 2vw;
+                                        margin-bottom: 1vw;
+                                        border-radius: 5px;
+
+                                        &#design-category{
+                                            
+                                            background-image: url('../../img/backgrounds/category-1.png');
+                                        }
+                                        
+                                        &#graphic-category{
+                                            
+                                            background-image: url('../../img/backgrounds/category-2.png');
+                                        }
+                                        
+                                        &#illustrator-category{
+                                            
+                                            background-image: url('../../img/backgrounds/category-3.png');
+                                        }
+                                        
+                                        &#typography-category{
+                                            
+                                            background-image: url('../../img/backgrounds/category-4.png');
+                                        }
+                                            
+                                        &>a{
+                                            
+                                            font-weight: bold;
+                                            text-transform: uppercase;
+                                            text-decoration: none;
+                                            font-size: 1.1rem;
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        &>#trending-posts{
+                            
+                        }
+                    }
+                }
+                
+            }
+            
+            &#single-list{
+                
+            }
+            
+            &#single{
+                
+            }
+        }
+    }
+}
